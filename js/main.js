@@ -131,13 +131,16 @@ setTimeout(function() {
     duration: '50%'
   }).setTween(seahorse).addTo(controller);
 
-}, 200);
+}, 500);
 
-$(window).on('resize', function() {
-  if (window.rt) {
-    clearTimeout(window.rt);
-  }
-  window.rt = setTimeout(function() {
-    location.reload();
-  }, 500)
-});
+
+if (Modernizr.touch) {
+  var lastWidth = $(window).width();
+
+  $(window).on('resize', function () {
+    if ($(window).width() !== lastWidth) {
+      location.reload();
+    }
+  });
+}
+
