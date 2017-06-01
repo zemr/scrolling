@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Forum");
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  padding: 0;
+  background-color: #548b89;
+  font-family: 'Forum', cursive;
+  font-size: 30px; }
+
+/* sections */
+[class^="section"] {
+  width: 100%;
+  height: 100vh; }
+
+.section1 {
+  position: relative;
+  background: linear-gradient(#F3F8FB, #1e576a); }
+
+.section2 {
+  background-color: #008484; }
+  .section2 .container {
+    position: absolute; }
+
+.intersection3 {
+  height: 300px;
+  background-color: #5db29b; }
+  .intersection3 .container {
+    line-height: 300px; }
+
+.section4 {
+  position: relative;
+  background-color: #367b84; }
+  .section4 .container {
+    position: absolute;
+    top: 0; }
+  .section4 img {
+    opacity: .2; }
+
+.section5 {
+  position: relative;
+  overflow: hidden;
+  background-color: #237160; }
+  .section5 .container {
+    position: relative;
+    background-color: #16878c; }
+  .section5 img {
+    width: 60%;
+    position: absolute;
+    right: 4%;
+    bottom: 10px;
+    opacity: .2; }
+
+.section6 {
+  position: relative;
+  overflow: hidden;
+  background-color: #2f6c82; }
+
+/* sections 2-6 */
+.container {
+  height: 100%;
+  line-height: 100vh;
+  text-align: center; }
+
+.text {
+  max-width: 80%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  line-height: 1em;
+  color: #fff; }
+
+/* section1 */
+.diver {
+  width: 22px;
+  height: 34px;
+  margin: auto;
+  opacity: 0; }
+
+.diver-arrow {
+  width: 40px;
+  height: 62px;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%); }
+
+.diver-svg {
+  fill: #1e576a;
+  stroke: #fff; }
+
+/* section2 */
+.bubble {
+  display: inline-block;
+  background-image: url("../img/bubble.svg");
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.bubble-xs {
+  width: 18px;
+  height: 18px; }
+
+.bubble-s {
+  width: 22px;
+  height: 22px; }
+
+.bubble-m {
+  width: 26px;
+  height: 26px; }
+
+/* section4 */
+.section-screen {
+  position: absolute;
+  top: 0;
+  background-color: #237160;
+  visibility: hidden; }
+
+.section-fish {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  background-image: url("../img/fish.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  visibility: hidden; }
+
+/* section6 */
+.seahorse {
+  width: 36px;
+  height: 100px;
+  position: absolute;
+  left: 15%;
+  background-image: url("../img/seahorse.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: .5; }
+
+/*# sourceMappingURL=styles.css.map */
