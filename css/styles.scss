@@ -104,6 +104,9 @@ body {
   width: 22px;
   height: 34px;
   margin: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   opacity: 0;
 }
 
@@ -113,7 +116,7 @@ body {
   margin: auto;
   position: absolute;
   left: 50%;
-  bottom: 30px;
+  bottom: 90px;
   transform: translateX(-50%);
 }
 
